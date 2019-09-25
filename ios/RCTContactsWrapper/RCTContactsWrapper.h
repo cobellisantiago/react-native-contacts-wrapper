@@ -6,12 +6,13 @@
 //  Copyright © 2016 Facebook. All rights reserved.
 //
 
-#import "RCTBridgeModule.h"
+#import <React/RCTBridgeModule.h>
 
-@import Contacts;
-@import ContactsUI;
-@import AddressBook;
-@import AddressBookUI;
+#import <Contacts/Contacts.h>
+#import <ContactsUI/ContactsUI.h>
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
+
 
 @interface RCTContactsWrapper : NSObject <RCTBridgeModule, CNContactPickerDelegate, ABPeoplePickerNavigationControllerDelegate>
 
