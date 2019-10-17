@@ -83,6 +83,8 @@ Also add
 9. In same screen, click + again, you should now see the .a file for you project, Add this
 10. Clean and Rebuild your Xcode project
 
+Also if you have cocoaPods,just cd ios/ && pod install.
+
 
 ##API
 
