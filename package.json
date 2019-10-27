@@ -1,13 +1,14 @@
 {
   "name": "@tuofeng/react-native-contacts-wrapper",
-  "version": "0.2.7",
+  "version": "0.2.8",
+  "description": "Contacts Wrapper",
   "nativePackage": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LynxITDigital/react-native-contacts-wrapper.git"
+    "url": "git+https://github.com/iwater/react-native-contacts-wrapper.git"
   },
   "keywords": [
     "react",
@@ -21,9 +22,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LynxITDigital/react-native-contacts-wrapper/issues"
+    "url": "https://github.com/iwater/react-native-contacts-wrapper/issues"
   },
-  "homepage": "https://github.com/LynxITDigital/react-native-contacts-wrapper",
+  "homepage": "https://github.com/iwater/react-native-contacts-wrapper",
   "maintainers": [
     {
       "name": "Oliver Jacobs"

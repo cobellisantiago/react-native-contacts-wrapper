@@ -1,18 +1,26 @@
-require 'json'
-package = JSON.parse(File.read('package.json'))
+require "json"
+
+package = JSON.parse(File.read(File.join(__dir__, "package.json")))
 
 Pod::Spec.new do |s|
+  s.name         = "react-native-contacts-wrapper"
+  s.version      = package["version"]
+  s.summary      = package["description"]
+  s.description  = <<-DESC
+                  react-native-contacts-wrapper
+                   DESC
+  s.homepage     = "https://github.com/iwater/react-native-contacts-wrapper"
+  s.license      = "MIT"
+  # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.authors      = { "iwater" => "iwater@gmail.com" }
+  s.platforms    = { :ios => "9.0", :tvos => "10.0" }
+  s.source       = { :git => "https://github.com/iwater/react-native-contacts-wrapper.git", :tag => "#{s.version}" }
 
-  s.name           = package['name']
-  s.version        = package["version"]
-  s.summary        = 'Contacts plugin to wrap native contact pickers for iOS and Android.'
-  s.homepage       = package['homepage']
-  s.license        = package["license"]
-  s.author         = package['author']['name']
-  s.platform       = :ios, "9.0"
-  s.source         = { :git => 'https://github.com/LynxITDigital/react-native-contacts-wrapper.git' }
-  s.source_files   = "ios/RCTContactsWrapper/*.{h,m}"
+  s.source_files = "ios/**/*.{h,m,swift}"
+  s.requires_arc = true
 
-  s.dependency 'React'
-
+  s.dependency "React"
+	
+  # s.dependency "..."
 end
+
