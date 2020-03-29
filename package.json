@@ -1,11 +1,8 @@
 {
   "name": "@tuofeng/react-native-contacts-wrapper",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "Contacts Wrapper",
   "nativePackage": true,
-  "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iwater/react-native-contacts-wrapper.git"
